@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <script defer src="shop.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="clone.html"><img src="amazon_logo.png" alt="Amazon Logo"></a>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-signin">
+                <p><span>Hello, <a href="login.html">Sign in</a></span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+            <div class="nav-return">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="nav-cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="shop-container">
+        <h1>Shop Products</h1>
+        <div class="products">
+            <div class="product">
+                <img src="laptop.webp" alt="Laptop">
+                <h2>HP Pavilion Laptop</h2>
+                <p class="price">$799.99</p>
+                <button class="add-to-cart" data-name="HP Pavilion Laptop" data-price="799.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="smartphpne.jpeg" alt="Smartphone">
+                <h2>iPhone 14 Pro</h2>
+                <p class="price">$999.99</p>
+                <button class="add-to-cart" data-name="iPhone 14 Pro" data-price="999.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="headphones.webp" alt="Headphones">
+                <h2>Wireless Headphones</h2>
+                <p class="price">$149.99</p>
+                <button class="add-to-cart" data-name="Wireless Headphones" data-price="149.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="smartwatch.webp" alt="Smartwatch">
+                <h2>Apple Watch Series 8</h2>
+                <p class="price">$399.99</p>
+                <button class="add-to-cart" data-name="Apple Watch Series 8" data-price="399.99">Add to Cart</button>
+            </div>
+            <div class="product">
+                    <img src="box1_image.jpg" alt="Smartwatch">
+                    <h2>Clothes </h2>
+                      <p class="price">$500.99</p>
+                        <button class="add-to-cart" data-name="cloth" data-price="500.99">Add to Cart</button>
+                    
+                    
+            </div>
+              </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel1">Back to Top</div>
+        <div class="footer-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>About Amazon</a>
+            </ul>
+            <ul>
+                <p>Connect with Us</p>
+                <a>Facebook</a>
+                <a>Twitter</a>
+            </ul>
+        </div>
+        <div class="footer-panel3">
+            <div class="logo"></div>
+        </div>
+        <div class="footer-panel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+            </div>
+            <div class="copyright">
+                © 1996-2024, Amazon.com, Inc. or its Affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

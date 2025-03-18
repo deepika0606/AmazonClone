@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script defer src="cart.js"></script> <!-- JavaScript File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Shopping Cart
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        <p class="cart-subtotal">Subtotal (<span id="total-items">0</span> items): <span id="total-price">$0.00</span></p>
+
+        <div class="cart-items">
+            <div class="cart-item" data-price="99.99">
+                <img src="product1.jpg" alt="Product">
+                <div class="item-details">
+                    <h2>Wireless Bluetooth Headphones</h2>
+                    <p class="price">$99.99</p>
+                    <p class="delivery">Eligible for FREE Shipping</p>
+                    <label>Qty: 
+                        <select class="quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                    <div class="item-actions">
+                        <button class="delete-item">Delete</button>
+                        <button class="save-for-later">Save for later</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="49.99">
+                <img src="product2.jpg" alt="Product">
+                <div class="item-details">
+                    <h2>Smartwatch with Fitness Tracker</h2>
+                    <p class="price">$49.99</p>
+                    <p class="delivery">Eligible for FREE Shipping</p>
+                    <label>Qty: 
+                        <select class="quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                    <div class="item-actions">
+                        <button class="delete-item">Delete</button>
+                        <button class="save-for-later">Save for later</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Subtotal (<span id="total-items-bottom">0</span> items): <span id="total-price-bottom">$0.00</span></h2>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+        <hr>
+
+        <h2>Saved for Later</h2>
+        <div class="saved-items"></div>
+    </div>
+</body>
+</html>
